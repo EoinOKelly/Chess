@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class Menu {
     ChessBoard make = new ChessBoard();
+    Move move = new Move();
 
     Scanner input = new Scanner(System.in);
 
@@ -11,9 +12,12 @@ public class Menu {
 
         while(true){
             int choice = input.nextInt();
+
             if (choice == 1){
                 String[][] board = make.createChessBoard();
+                move.playerTurns();
             }
+
             else if (choice == 2) {
                 break;
             }

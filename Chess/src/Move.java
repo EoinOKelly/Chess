@@ -5,8 +5,30 @@ public class Move {
 
     String player1(){
         System.out.print("player 1's move: ");
-        String p1Move = input.nextLine();
+        return input.nextLine();
+    }
 
-        return p1Move;
+    String player2(){
+        System.out.print("player 2's move: ");
+        return input.nextLine();
+    }
+
+    void playerTurns(){
+        Boolean who = true;
+
+        while(true){
+            if (who.equals(true)){
+                String p1 = player1();
+                who = false;
+            }
+            else if (who.equals(false)) {
+                String p2 = player2();
+                who = true;
+            }
+            else{
+                break;
+            }
+        }
+
     }
 }

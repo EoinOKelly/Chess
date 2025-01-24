@@ -12,8 +12,8 @@ public class ChessBoard {
                         {"6", "|", " ", " ", " ", " ", " ", " ", " ", " "},
                         {"7", "|", "P", "P", "P", "P", "P", "P", "P", "P"},
                         {"8", "|", "R", "k", "B", "Q", "K", "B", "k", "R"},
-                        {"-", "-", "-", "-", "-", "-", "-", "-", "-", "-"},
-                        {" ", "a", "b", "c", "d", "e", "f", "g", "h"}};
+                        {" ", "|", "-", "-", "-", "-", "-", "-", "-", "-"},
+                        {" ", "|", "a", "b", "c", "d", "e", "f", "g", "h"}};
 
         for (int i = 0; i < chessBoard.length; i++) {
             for (int j = 0; j < chessBoard[i].length; j++) {
@@ -23,6 +23,7 @@ public class ChessBoard {
 
 
         }
+        System.out.println();
         return chessBoard;
     /*void printBoard(){
 

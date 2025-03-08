@@ -1,8 +1,7 @@
 package Pieces;
 
 public class Pieces {
-    boolean canMove(int[][] position, int[][] newPosition){
-
+    boolean canMove(int[] currentPos, int[] newPos, String[][] chessBoard){
         return true;
     }
 }

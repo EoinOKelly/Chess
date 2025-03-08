@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Move {
+    String move;
     Scanner input = new Scanner(System.in);
 
     String player1(){
@@ -13,22 +14,30 @@ public class Move {
         return input.nextLine();
     }
 
-    void playerTurns(){
+    void playerTurns(String move){
         Boolean who = true;
 
         while(true){
             if (who.equals(true)){
-                String p1 = player1();
+                move = player1();
                 who = false;
             }
             else if (who.equals(false)) {
-                String p2 = player2();
+                move = player2();
                 who = true;
             }
-            else{
+            else {
                 break;
             }
         }
 
     }
+
+    /*int[][] processMove() {
+
+        String regex = "^[a-h][1-8] to [a-h][1-8]$";
+
+        //nt[][] position = regex;
+
+   }*/
 }
